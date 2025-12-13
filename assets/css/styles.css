@@ -1,0 +1,1449 @@
+
+/*
+Pixelated Architect © Pixelated Architect 2023
+pixelatedarchitect.com
+
+TABLE DES MATIÈRES
+
+    @import (POLICES)
+
+    I. GENERAL
+        A. BASIC
+        B. PAGE LAYOUT
+            1. Box-sizing
+            2. Viewport
+            3. Grid
+        C. BACKGROUND STYLE (color / image)
+    
+    II. PAGE STYLING / BASICS
+        A. FONT DISPLAY
+        B. TEXT STYLING
+            1. Headers
+                a. General Headers
+                b. Special Effects (.minimize | .trivialize | .atomize)
+            2. Paragraph Basics (p | a | ::selection)
+        C. SPECIAL EFFECTS
+            1. Color (.white)
+            2. Other (.uppercase | .centered | .letter-spacing... | .hr-line | .inline)
+            3. Fade
+        D. IMAGES
+        E. FONT AWESOME ICON STYLING
+    
+    III. NAVIGATION MENUS
+        A. NAVIGATION
+        B. SIDEBAR
+
+    IV. BODY CONTENT
+        A. GENERAL (header | .title | .main-title | .subtitle | .body-container | footer | .footer-container | .model-name)
+        B. POP-UP BOX
+        C. FORM
+    
+    V. BUTTON
+
+    VI. FORM
+
+    VII. TABLE
+    
+    VIII. PAGE STYLING / SPECIAL EFFECTS
+        A. SCROLL BAR
+        B. CURSOR
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Praise&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Varela+Round&display=swap');
+
+@font-face {
+    font-family: "Jhodes";
+    src: url("/assets/fonts/Jhodes.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Magis";
+    src: url("/assets/fonts/MagisAuthentic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montage";
+    src: url("/assets/fonts/Montage.woff") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*I. GENERAL*/
+
+    /*I-A. BASIC*/
+
+        html {
+            scroll-behavior: smooth;
+            /* cursor: none; */
+        }
+
+        html, body, div, span, applet, object,
+        iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+        pre, a, abbr, acronym, address, big, cite,
+        code, del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var, b,
+        u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+        form, label, legend, table, caption, tbody,
+        tfoot, thead, tr, th, td, article, aside,
+        canvas, details, embed, figure, figcaption,
+        footer, header, hgroup, menu, nav, output, ruby,
+        section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+        }
+
+    /*End of BASIC*/
+
+    /*I-B. PAGE LAYOUT*/
+
+        /*I-B-1. BOX-SIZING*/
+
+            html {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -o-box-sizing: border-box;
+            }
+
+            *, *::before, *::after {
+                box-sizing: inherit;
+                -webkit-box-sizing: inherit;
+                -moz-box-sizing: inherit;
+                -ms-box-sizing: inherit;
+                -o-box-sizing: inherit;
+            }
+
+        /*End of BOX-SIZING*/
+
+        /*I-B-2. VIEWPORT*/
+
+            @-ms-viewport {
+                width: device-width;
+            }
+
+            body {
+                /*-ms-overflow-style: scrollbar;*/
+                overflow-x: hidden;
+            }
+
+            @media screen and (max-width: 480px) {
+
+                html, body {
+                    min-width: 320px;
+                }
+            }
+
+        /*End of VIEWPORT*/
+
+        /* I-B-3. GRID */
+
+
+        /* End of GRID */
+    
+    /*End of PAGE LAYOUT*/
+
+    /*I-C. BACKGROUND STYLE*/
+
+        html {
+            
+            background: #181818;
+
+            /* For Background Gradient
+            background: linear-gradient(90deg, rgb(110, 255, 228) 0%, rgb(0, 245, 200) 100%);*/
+
+            /* For Background Image
+            background-image: url("/images/pixels-bg.jpg");
+            width: 100%;
+            height: 100vh; You must set a specified height
+            background-position: center center; Center the image
+            background-repeat: no-repeat; Do not repeat the image
+            background-size: cover; Resize the background image to cover the entire container
+            background-attachment: fixed; Fixes the image in place when scrolling*/
+
+            /* Background Image */
+            background-image: url("images/blueprint.jpg");
+            width: 100%;
+            height: 100vh;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+    /*End of BACKGROUND*/
+
+/*End of GENERAL*/
+
+/*II. PAGE STYLING / BASICS */
+
+    /*II-A. FONT DISPLAY*/
+
+        body, input, select, textarea {
+            font-family: "Montserrat", "Open Sans", "Raleway", "Varela Round";
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1;
+            color: #FFFFFF;
+        }
+
+    /*End of FONT DISPLAY*/
+
+    /*II-B. TEXT STYLING*/
+
+        /*II-B-1. HEADERS*/
+
+            /*II-B-1-a. GENERAL HEADERS*/
+
+                h1 {
+                    font-family: "Barlow Condensed";
+                    font-size: 7.5rem;
+                    /* letter-spacing: .25rem; */
+                    /*text-transform: uppercase; | Used for Landing Page title with Binjay font, no uppercase necessary*/
+                }
+
+                h2 {
+                    font-family: "Barlow Condensed";
+                    font-size: 4rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                .popup-box h2 {
+                    color: #000;
+                    font-size: 2.5rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                h3 {
+                    font-family: "Barlow Condensed";
+                    font-size: 3rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    font-family: "Barlow Condensed";
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                h5 {
+                    font-family: "Barlow Condensed";
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                h6 {
+                    font-family: "Barlow Condensed";
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            
+            /*End of GENERAL HEADERS*/
+
+            /*II-B-1-b. SPECIAL EFFECTS*/
+
+                .minimize {
+                    font-size: 3rem;
+                    font-weight: 300;
+                }
+
+                .trivialize {
+                    font-size: 2.5rem;
+                    font-weight: 400;
+                }
+
+                .atomize {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
+
+            /*End of SPECIAL EFFECTS*/
+
+        /*End of HEADERS*/
+
+        /*II-B-2. PARAGRAPH BASICS*/
+
+            p {
+                line-height: 5rem;
+            }
+
+            b {
+                font-weight: 800;
+            }
+
+            strong {
+                font-weight: 600;
+            }
+
+            i {
+                font-style: italic;
+            }
+
+            em {
+                font-style: italic;
+                font-weight: 500;
+            }
+
+            mark {
+                /*Highlight effect : rounded corners 
+                color: #FFFFFF;
+                font-weight: 600;
+                background-color: #000000;
+                border-radius: 6px;
+                padding: 4px 8px;*/
+
+                /*Highlight effect : gradient
+                background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+                border-radius: 6px;
+                padding: 4px 8px;*/
+
+                /*Highlight effect : SVG Marker) 
+                background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=000000);
+                font-weight: 600;
+                padding: 4px 8px;*/
+
+                color: #ffbc00;
+                background-color: #fff1cc;
+                padding: 2px 4px;
+                font-weight: 600;
+            }             
+
+            del {
+                font-weight: 600;
+                font-style: italic;
+                text-decoration: line-through #707070 2px;
+            }
+
+            ins {
+                /*Gradient Text
+                background: -webkit-linear-gradient(45deg, #FFBC00, #E94057cc);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;*/
+                font-weight: 600;
+                text-decoration-line: none;
+                /*text-decoration-style: 2px double #d1111b;*/
+                border-bottom: 4px solid #ffbc00cc;
+                /*background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=e94057cc);
+                padding: 0px 8px;*/
+            }
+
+            sup {
+                font-size: .75rem;
+            }
+
+            sub {
+                font-size: .75rem;
+            }
+
+            /* NEED TO DEFINE THIS ONE a {
+                
+            } */
+
+            /*Zoom effect*/
+                a.zoom {
+                    color: #FFFFFF;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: .15rem;
+                    transition: all 1.25s ease-in-out 0s;
+                    cursor: none;
+                }
+
+                a.zoom:hover {
+                    /*color: #000;*/
+                    letter-spacing: .5rem;
+                    font-size: .9rem;
+                }
+                
+            /*End of Zoom effect*/
+
+            /*Center Out Effect*/
+
+                a.center-out {
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    position: relative;
+                    padding: 2rem 0rem;             
+                    transition: all 1.25s ease-in-out 0s;
+                }
+                
+                a.center-out:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px; /*Height of line*/
+                    bottom: 0;
+                    margin: 1.75rem 0;
+                    background-color: #FFFFFF; /*Color of line*/
+                    visibility: hidden;
+                    transform: scaleX(0);
+                    transition: all .75s ease-in-out 0s;
+                }
+                
+                a.center-out:hover:before {
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+
+            /*End of Center Out Effect*/
+
+            /*Line Glide Effect*/
+
+                a.line-glide {
+
+                    /*font-weight: 600;*/
+
+                    background-image: linear-gradient(
+                        to right,
+                        #fff,
+                        #fff 50%,
+                        #909090 50% /*Color of the link before hovering on it*/
+                    );
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    display: inline-block;
+                    /*padding: 5px 0;*/
+                    position: relative;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                }
+                
+                a.line-glide:before {
+                    content: '';
+                    background: #fff; /*Color of the line that slides in*/
+                    display: block;
+                    position: absolute;
+                    bottom: -4px; /*Position of the line that slides in*/
+                    left: 0;
+                    width: 0;
+                    height: 1.5px; /*Height of the line that slides in*/
+                    transition: all .5s ease-in-out;
+                }
+                
+                a.line-glide:hover {
+                    background-position: 0;
+                }
+                
+                a.line-glide:hover::before {
+                    width:100%;
+                }
+
+            /*End of Line Glide Effect*/
+
+            /*Underline Effect*/
+
+                a.underline::after {
+                    content: ' ';
+                    display: inline;
+                    position: absolute;
+                    top: 100%;
+                    left: 25%;
+                    
+                    width: 50%;
+                    height: 1px;
+                    border-bottom: 3px solid #FFFFFF;
+                    
+                    transition: 1s;
+                }
+                
+                a.underline:hover::after {
+                    width: 100%;
+                    left: 0;
+                }
+
+            /*End of Underline Effect*/
+            
+            hr {
+                height:2px;
+                border-width:0;
+                color:gray;
+                background-color:gray;
+            }
+
+            ::selection { /* Selected text is a different color than the usual blue */
+                color: #000; /*rgb(30, 255, 220); #00ff99*/
+                background: #fff; /*#ff5500 #00cbfe;*/
+            }
+
+        /*End of PARAGRAPH BASICS*/
+    
+    /*End of TEXT STYLING*/
+
+    /*II-C. SPECIAL EFFECTS*/
+
+        /*II-C-1. COLORS*/
+
+            .white {
+                color: #FFFFFF;
+            }
+
+            .green {
+                color: #AAD9CD;
+            }
+
+            .pink {
+                color: #E9BBB5;
+            }
+
+        /*End of COLORS*/
+
+        /*II-C-2. FONT STYLES*/
+
+            .montserrat-font {
+                font-family: "Montserrat";
+            }
+
+            .jhodes-font {
+                font-family: "Jhodes";
+                font-weight: 400;
+            }
+
+            .magis-font {
+                font-family: "Magis";
+                font-weight: 400;
+            }
+
+            .montage-font {
+                font-family: "Montage";
+                font-weight: 400;
+            }
+
+        /*End of OTHER*/
+
+        /*II-C-3. OTHER*/
+
+            .uppercase {
+                text-transform: uppercase;
+            }
+
+            .capitalized {
+                text-transform: capitalize;
+            }
+
+            .centered {
+                text-align: center;
+            }
+
+            .transparent {
+                color: transparent;
+            }
+            
+            .letter-spacing {
+                letter-spacing: .5rem;
+            }
+
+            .letter-spacing-title {
+                letter-spacing: 1rem;
+            }
+
+            .give-me-some-space {
+                padding: 0 .5rem;
+            }
+
+            .montserrat-title-line-height {
+                line-height: 100%;
+            }
+
+            .one-point-one-rem {
+                font-size: 1.1rem;
+            }
+
+            .weight-six-hundred {
+                font-weight: 600;
+            }
+
+            .hr-line {
+                border-top: 2px solid;
+                width: 15%;
+                margin: auto;
+                margin-top: 1.25rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .inline {
+                display: inline;
+            }
+
+        /*End of OTHER*/
+
+        /*II-C-4. FADE*/
+
+            .faded {
+                width: 100%;
+                background-image: linear-gradient(
+                    #000000 transparent 12%,
+                    #000000 transparent 30%,
+                    #000000 transparent 70%,
+                    transparent 85%,
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-attachment: fixed;
+            }
+
+            .faded > * {
+                color: transparent;
+            }
+
+        /*End of FADE*/
+    
+    /*End of SPECIAL EFFECTS*/
+
+    /* II-D. IMAGES */
+
+        .screenshot {
+            width: 50%;
+        }
+
+    /* End of IMAGES */
+
+    /*II-E. FONT AWESOME ICON STYLING*/
+
+        .white-icon {
+            color: #FFFFFF;
+        }
+
+        .large-icon {
+            font-size: 2.5rem;
+        }
+
+        .title-icon {
+            font-size: 2rem;
+            color: #000000;
+            transition: 1.5s;
+        }
+
+        .title-icon:hover {
+            color: #ffbc00;
+        }
+
+    /*End of FONTAWESOME ICON STYLING*/
+
+/*End of PAGE STYLING*/
+
+/*III. NAVIGATION MENUS*/
+
+    /* III-A. NAVIGATION */
+
+        .nav-container {
+            font-family: "Montserrat";
+            color: #cbcbcb;
+            
+            position: fixed;
+            top: 50%;
+            transform: translate(0%, -50%);
+
+            z-index: 10;
+        }
+
+        nav ul {
+            margin: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+        }
+
+        nav li {
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            list-style-type: none;
+
+            padding: .75rem 0;
+            margin: 0;
+
+            transition: 1.5s ease-in-out;
+        }
+
+        nav li a {
+            color: #bbb;
+            text-decoration-line: none;
+            cursor: none;
+            transition: 2s;
+        }
+
+        nav li a:hover {
+            color: #fff;
+            text-decoration-line: none;
+            cursor: none;
+        }
+
+    /* End of NAVIGATION */
+
+    /* III-B. SIDEBAR */
+
+        .sidebar {
+            font-family: "Montserrat";
+            color: #cbcbcb;
+            
+            position: fixed;
+            top: 50%;
+            right: 0%;
+            transform: translate(0, -50%);
+            
+
+            z-index: 10;
+        }
+
+        .sidebar-item {
+            margin-right: .5rem;
+            display: flex;
+            justify-content: right;
+            align-items: baseline;
+        }
+
+        .sidebar-item span {
+            padding-right: .25rem;
+        }
+
+    /* End of SIDEBAR */
+
+/*End of NAVIGATION*/
+
+/*IV. BODY CONTENT */
+
+    /* IV-A. GENERAL */
+
+        .secondary-header {
+            color: #ccc;
+            background-color: #000;
+            font-size: 1.5rem;
+            font-weight: 500;
+            
+            width: 100%;
+            padding: 2% 0%;
+            
+            position: fixed;
+            
+            display: flex;
+            justify-content: center;
+
+            z-index: 2;
+            
+        }
+
+        header {
+            margin: 0;
+            height: 100vh;
+        }
+
+        .landing-title {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .main-title {
+            text-align: center;
+            margin: auto;
+            width: 100vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+            /*TITLE FOR SMALLER SCREENS*/
+
+                @media screen and (max-width: 980px) {
+
+                    .main-title {
+                        width: 70%;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+
+                    .main-title {
+                        width: 100%;
+                        margin: none;
+                        transform: translateZ(0px) scale(.8);
+                    }
+                }
+
+            /*End of TITLE FOR SMALLER SCREENS*/
+
+        .subtitle {
+            padding-top: 2rem;
+            font-family: 'Montserrat';
+            font-size: 1rem;
+            font-weight: 400;
+            /*text-transform: uppercase;*/
+        }
+
+        .subtitle .subtitle-fr {
+            display: none;
+        }
+        
+        /*.subtitle:hover .subtitle-eng {
+            display: none;
+        }
+        
+        .subtitle:hover .subtitle-fr {
+            display: inline;
+        }*/
+
+        .body-container {
+            background-color: #AAD9CD;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+            /*BODY CONTAINER FOR SMALLER SCREENS*/
+
+            @media screen and (max-width: 980px) {
+
+                .body-container {
+                    width: 75%;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+
+                .body-container {
+                    width: 92.5% ;
+                }
+            }
+
+            /*End of BODY CONTAINER FOR SMALLER SCREENS*/
+
+        
+            .content-container {
+                color: #FFF;
+                font-family: "Montserrat";
+                font-weight: 400;
+                margin: auto;
+                height: 100vh;
+                text-align: center;
+            }
+    
+                /*CONTENT CONTAINER FOR SMALLER SCREENS*/
+    
+                @media screen and (max-width: 980px) {
+    
+                    .content-container {
+                        width: 75%;
+                    }
+                }
+    
+                @media screen and (max-width: 480px) {
+    
+                    .content-container {
+                        width: 92.5% ;
+                    }
+                }
+    
+                /*End of BODY CONTAINER FOR SMALLER SCREENS*/
+
+            
+            .model-container {
+                margin: auto;
+                transform: translate(0%, 40%);
+            }
+    
+                /*MODEL CONTAINER FOR SMALLER SCREENS*/
+    
+                @media screen and (max-width: 980px) {
+    
+                    .model-container {
+                        width: 75%;
+                    }
+                }
+    
+                @media screen and (max-width: 480px) {
+    
+                    .model-container {
+                        width: 92.5% ;
+                    }
+                }
+    
+                /*End of MODEL CONTAINER FOR SMALLER SCREENS*/
+                
+
+        footer {
+            font-size: .75rem;
+            margin-top: 0;
+            z-index: -10;
+        }    
+
+        .footer-container {
+            position: fixed;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+            /*FOOTER FOR SMALLER SCREENS*/
+
+            @media screen and (max-width: 480px) {
+
+                .footer-container {
+                    width: 95%;
+                    margin: auto;
+                }
+            }
+
+            /*End of FOOTER FOR SMALLER SCREENS*/
+
+    /* End of GENERAL */
+    
+    /* IV-B. POP-UP BOX */
+
+        /* Pop-up Text */
+
+            .popup-text {
+                font-weight: 500;
+                text-transform: none;
+                
+                /*position: relative;*/
+                display: inline-block;
+                
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+        /* The Actual Pop-up Box */
+
+            .popup-text .popup-box {
+                visibility: hidden;
+
+                width: 40rem;
+                
+                color: #000;
+                background-color: #fff; /*#ffe7b4; #00ddff; #ff4400; #ff6600;*/
+                box-shadow: 0 0 5px 5px #00000015;
+
+                border-radius: 25px;
+                /*padding: 1rem;*/
+                
+                cursor: none;
+                
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left: 50%;
+                top: -900%;
+            }
+
+        /* Pop-up Sections */
+
+            .popup-main {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 2.5rem;
+            }
+
+            .popup-section {
+                text-align: justify;
+                width: 50%;
+                padding: 0 1.5rem;
+                border-right: 2px solid #eaeaea;
+            }
+
+            .popup-section:last-child {
+                border-right: none;
+            }
+
+        /* Pop-Up Box Close Button*/
+
+            .popup-box button.close-box-button {
+                display: block;
+                margin: .3rem 0 0 auto;
+                margin-right: .5rem;
+
+                font-size: 2rem;
+                color: #b9b9b9; /*#ff7000;*/
+                background: #00000000; /*Same color as Pop-up Box*/
+
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                border: none;
+                outline: none;
+
+                cursor: none;
+            }
+
+            /*.popup-box button.close-box-button:hover {
+                color: #ffbc00;
+            }*/
+
+            .rotate:hover {
+                color: #000;
+                animation: rotation .5s linear;
+            }
+
+                @keyframes rotation {
+                    from {
+                    transform: rotate(0deg);
+                    }
+                    to {
+                    transform: rotate(180deg);
+                    }
+                }
+
+        /* Pop-Up Box Submit Button*/
+
+        .popup-box button.submit-button {
+            display: block;
+            margin: auto;
+            margin-top: .5rem;
+            margin-bottom: 2.75rem;
+            padding: .75rem;
+
+            color: #000;
+            border: 3px solid #000;
+            background: #00000000; /*background: #eeff00; #00ffbb;*/
+
+            font-size: .85rem;
+            text-transform: uppercase;
+            letter-spacing: .5rem;
+            font-style: italic;
+            font-weight: 600;
+            
+            border-radius: 30px;
+            width: 12rem;
+            height: 3rem;
+            
+            outline: none;
+
+            cursor: none;
+
+            /*transition: 1s ease-in-out;*/
+        }
+
+        .popup-box button.submit-button:hover {
+            color: #fff;
+            background: #000; /*#00eaff; #00eadb;*/
+        }
+            
+        /* Toggle this class - hide and show the popup */
+
+        .popup-text .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        
+        /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+                from {opacity: 0;} 
+                to {opacity: 1;}
+            }
+            
+            @keyframes fadeIn {
+                from {opacity: 0;}
+                to {opacity:1 ;}
+            }
+
+    /*End of POPUP BOX*/
+
+/*End of BODY CONTENT*/
+
+/*V. BUTTON*/
+
+    .button {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .25rem;
+        
+        width: 100%;
+        height: 3.75rem;
+        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: 2.5s;
+    }
+
+        /* BUTTON FOR SMALLER SCREENS */
+
+        @media screen and (max-width: 480px) {
+
+            .button {
+                width: 100%;
+            }
+        }
+
+        /* End of BUTTON FOR SMALLER SCREENS */
+
+    .button-full {
+        color: #ff0000;
+        background-color: #000000;
+        border: none;
+    }
+
+    .button-full:hover {
+        /*background-color: rgba(220, 70, 118, 1); RASPBERRY*/
+        /*background-color: #006a7d; COOL BLUE COLOR*/
+        /*background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 150%);*/
+        color: #000000;
+        background-color: #FFFFFF;
+        border: 4px solid #000000;
+    }
+
+    .button-border {
+        color: #505050;
+        background-color: #AAD9CD;
+        border: 4px solid #000000;
+    }
+
+    .button-border:hover {
+        color:#000000;
+        background-color: #7db9a9;
+        border: 4px solid #000000;
+    }
+
+    .button2 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .25rem;
+        
+        width: 15rem;
+        height: 3.75rem;
+        border-radius: 8px;
+
+        margin: auto;
+        margin-top: 2rem;
+
+        transition: 2.5s;
+    }
+
+    .button-white-border {
+        color: #aaa;
+        border: 3px solid #aaa;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-white-border:hover {
+        color: #FFF;
+        background-color: #303030;
+        border: 3px solid #FFFFFF;
+    }
+
+/*End of BUTTON*/
+
+/* VI. FORM */
+
+    /*VI-A. CONTACT FORM*/
+
+        .contact-form-bloc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 2.5rem;
+        }
+
+        .contact-form-text {
+            font-family: "Montserrat";
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline;
+            padding-bottom: .5rem;
+        }
+
+        textarea {
+            font-family: "Montserrat";
+            font-size: 1rem;
+            font-style: italic;
+            color: #808080;
+            background-color: transparent;
+            line-height: 1rem;
+            text-align: center;
+            
+            display: inline;
+            min-width: 25rem;
+            width: 50vw;
+
+            padding-top: .5rem;
+
+            border: none;
+            outline: none;
+            height: auto;
+            overflow: hidden;
+            resize: none;
+            border-bottom: 1px solid #505050;
+        }
+
+        .your-project-textarea {
+            resize: vertical;
+        }
+
+    /*End of CONTACT FORM*/
+
+    /*VI-B. INPUT*/
+
+        input[type=text] {
+            font-family: "Montserrat";
+            font-size: 1rem;
+            font-style: italic;
+            color: #808080;
+            background-color: transparent;
+            line-height: 1rem;
+            text-align: center;
+            
+            display: inline;
+            min-width: 25rem;
+            width: 50vw;
+
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+
+            border: none;
+            outline: none;
+            height: auto;
+            overflow: hidden;
+            resize: none;
+            border-bottom: 1px solid #505050;
+        }
+
+        input[type=button], input[type=submit], input[type=reset] {
+            background: none;
+            cursor: none;
+        }
+
+    /*End of INPUT*/
+
+/* End of FORM*/
+
+/*VII. TABLE*/
+
+    table {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /*Table Head*/    
+    table thead {
+        border-bottom: solid 2px;
+    }
+
+    table th {
+        color: #FFFFFF;
+        background-color: #000000;
+        font-family: "Montserrat";
+        font-size: .8rem;
+        font-weight: 800;
+        letter-spacing: 0.25rem;
+        line-height: 1.5rem;
+        padding: 1.25rem .75rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+        @media screen and (max-width: 980px) {
+
+            table th {
+                font-size: 0.7rem;
+            }
+
+        }
+
+    /*Table Body*/
+    tbody {
+        background-color: #fff4d7;
+    }
+
+    /*Table Row*/
+    table tbody tr {
+        font-size: .9rem;
+        border: solid 1px;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fff9ea;
+    }
+
+    tr:hover {
+        background-color: #ffdb77;
+    }
+
+    /*Table Data*/
+    table td {
+        padding: 1.25rem 0.35rem;
+        text-align: center;
+    }
+
+        @media screen and (max-width: 480px) {
+
+            table td {
+                padding: 0.75rem 0.35rem;
+                text-align: center;
+            }
+        }
+
+    /*Table Foot*/
+    table tfoot {
+        border-top: solid 2px;
+    }
+
+/*End of TABLE*/
+
+/*VIII. PAGE STYLING | SPECIAL EFFECTS */
+
+    /*VIII-A. SCROLL BAR*/
+
+        /* width */
+            ::-webkit-scrollbar {
+                width: 7px;
+            }
+            
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+            box-shadow: inset 0 0 2px #909090;
+            border-radius: 5px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #707070;
+            border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #505050; 
+        }
+
+    /*End of SCROLL BAR*/
+
+    /*VIII-B. CURSOR*/
+
+        /* Target & Follower */
+            
+            .main-cursor {
+                position: fixed;
+                left: 10px;
+                width: 6px;
+                height: 6px;
+                background: #fff; /*#fff; Needs to be white for inversion to work */
+                
+                /*border-radius: 50%;*/
+                transform: translate(-50%, -50%);
+
+                /* For inverted colors */
+                /*background: #fff;
+                mix-blend-mode: difference; Inverts colors*/
+                
+                pointer-events: none; /* Make link clickable with pointer appearing when activated*/
+                transition: width 0.5s, height 0.5s;
+                /*transition-timing-function: ease-out;*/
+                z-index: 1;
+            }
+
+            .main-cursor.none {
+                background: transparent;
+
+                /* For inverted colors */
+                /*background: #fff;
+                mix-blend-mode: difference; Inverts colors*/
+            }
+
+            .green-cursor {
+                position: fixed;
+                left: 10px;
+                width: 6px;
+                height: 6px;
+                background: #AAD9CD; /*yellow: E8D595 | green: AAD9CD*/
+                transform: translate(-50%, -50%);                
+                pointer-events: none; /* Make link clickable with pointer appearing when activated*/
+                transition: width 0.5s, height 0.5s;
+                transition: 0.15s; /* Makes outer cursor follow .15s late */
+                z-index: 1;
+            }
+
+            .green-cursor.none {
+                background: transparent;
+                transition: width 0.5s, height 0.5s;
+            }
+
+            .pink-cursor {
+                position: fixed;
+                left: 10px;
+                width: 6px;
+                height: 6px;
+                background: #E9BBB5;
+                transform: translate(-50%, -50%);
+                pointer-events: none; /* Make link clickable with pointer appearing when activated*/
+                transition: width 0.5s, height 0.5s;
+                transition: 0.25s; /* Makes outer cursor follow .25s late */
+                z-index: 1;
+            }
+
+            .pink-cursor.none {
+                background: transparent;
+                transition: width 0.5s, height 0.5s;
+            }
+
+        /* End of Target & Follower */
+
+    /* End of CURSOR */
+
+/*End of VIII. PAGE STYLING | SPECIAL EFFECTS */
+
+
+
+
+/*************************************************************
+        BASIC STYLES
+**************************************************************/
+    
+    .home-page {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        padding: .5rem 1rem;
+        background: #fafafa;
+        border-bottom-left-radius: 5px;
+        transition: 300ms;
+    }
+    
+    .home-page a,
+    .home-page a:visited {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        transition: 300ms;
+    }
+    
+    .home-page:hover,
+    .home-page:active {
+        box-shadow: 0 0 10px #33333350;
+    }
+
+    /*******************************************/
