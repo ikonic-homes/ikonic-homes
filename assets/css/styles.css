@@ -51,16 +51,58 @@ TABLE DES MATIÈRES
 */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Praise&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Varela+Round&display=swap');
+/*Antic Didone*/ @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+/*Barlow*/ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Baskerville*/ @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+/*Cormorant*/ @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+/*Cormorant Garamond*/ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/*Crimson Text*/ @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/*Garamond*/ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+/*Gilda Display*/ @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+/*Libre Caslon Display*/ @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+/*Libre Caslon Text*/ @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+/*Merriweather*/ @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+/*Montserrat*/ @import url('https://fonts.googleapis.com/css2?&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Open Sans*/ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*Praise*/ @import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+/*Raleway*/ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Roboto Mono*/ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*Varela Round*/ @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
 
 @font-face {
     font-family: "Jhodes";
-    src: url("/assets/fonts/Jhodes.otf") format("opentype");
+    src: url("../fonts/Jhodes.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Estrada";
+    src: url("../fonts/EstradaSignature.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/georgia.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Georgiai";
+    src: url("../fonts/georgiai.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Magis";
-    src: url("/assets/fonts/MagisAuthentic.woff2") format("woff2");
+    src: url("../fonts/MagisAuthentic.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -68,7 +110,7 @@ TABLE DES MATIÈRES
 
 @font-face {
     font-family: "Montage";
-    src: url("/assets/fonts/Montage.woff") format("woff2");
+    src: url("../fonts/Montage.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -157,7 +199,7 @@ TABLE DES MATIÈRES
 
         html {
             
-            background: #181818;
+            background: #000a37;
 
             /* For Background Gradient
             background: linear-gradient(90deg, rgb(110, 255, 228) 0%, rgb(0, 245, 200) 100%);*/
@@ -171,8 +213,9 @@ TABLE DES MATIÈRES
             background-size: cover; Resize the background image to cover the entire container
             background-attachment: fixed; Fixes the image in place when scrolling*/
 
-            /* Background Image */
-            background-image: url("images/blueprint.jpg");
+            /* Background Image */           
+
+            background-image: url("../images/stock/blueprint.jpg");
             width: 100%;
             height: 100vh;
             background-position: center center;
@@ -180,6 +223,35 @@ TABLE DES MATIÈRES
             background-size: cover;
             background-attachment: fixed;
 
+            /*Fade In
+                .bgfade::before {
+                    content: "";
+                    position: fixed;
+                    inset: 0;
+                    z-index: -1;
+
+                    background-image: url("../images/stock/blueprint.jpg");
+                    width: 100%;
+                    height: 100vh;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+
+                    opacity: 0;
+                    animation: bgFadeIn 900ms ease-out forwards;
+                    will-change: opacity;
+                }*/
+
+                /*@keyframes bgFadeIn {
+                to { opacity: 1; }
+                }
+
+                /* Accessibility */
+                /*@media (prefers-reduced-motion: reduce) {
+                .bg-fade::before { animation: none; opacity: 1; }
+                }*/
+            
         }
 
     /*End of BACKGROUND*/
@@ -195,7 +267,7 @@ TABLE DES MATIÈRES
             font-weight: 400;
             font-size: 1.25rem;
             line-height: 1;
-            color: #FFFFFF;
+            color: #000a37;
         }
 
     /*End of FONT DISPLAY*/
@@ -207,17 +279,18 @@ TABLE DES MATIÈRES
             /*II-B-1-a. GENERAL HEADERS*/
 
                 h1 {
-                    font-family: "Barlow Condensed";
+                    /*font-family: "Barlow Condensed";*/
                     font-size: 7.5rem;
                     /* letter-spacing: .25rem; */
                     /*text-transform: uppercase; | Used for Landing Page title with Binjay font, no uppercase necessary*/
+                    
                 }
 
                 h2 {
-                    font-family: "Barlow Condensed";
-                    font-size: 4rem;
-                    font-weight: 600;
-                    text-transform: uppercase;
+                    font-family: "magis";
+                    font-size: 2rem;
+                    font-weight: 400;
+                    /*text-transform: uppercase;*/
                 }
 
                 .popup-box h2 {
@@ -273,6 +346,16 @@ TABLE DES MATIÈRES
                     font-weight: 400;
                 }
 
+                
+                .white-link:link,
+                .white-link:visited,
+                .white-link:hover,
+                .white-link:active,
+                .white-link:focus {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
             /*End of SPECIAL EFFECTS*/
 
         /*End of HEADERS*/
@@ -280,7 +363,9 @@ TABLE DES MATIÈRES
         /*II-B-2. PARAGRAPH BASICS*/
 
             p {
-                line-height: 5rem;
+                line-height: 1.25rem;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
             }
 
             b {
@@ -471,10 +556,11 @@ TABLE DES MATIÈRES
             /*End of Underline Effect*/
             
             hr {
-                height:2px;
+                height:1px;
                 border-width:0;
-                color:gray;
-                background-color:gray;
+                /*color:gray;*/
+                background-color:rgb(200, 200, 200);
+                margin-top: 1.5rem;
             }
 
             ::selection { /* Selected text is a different color than the usual blue */
@@ -504,20 +590,87 @@ TABLE DES MATIÈRES
 
         /*End of COLORS*/
 
-        /*II-C-2. FONT STYLES*/
+        /*II-C-2. FONT FAMILIES*/
 
-            .montserrat-font {
-                font-family: "Montserrat";
+            .antic-font {
+                font-family: "Antic Didone", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .baskervville-font {
+                font-family: "Baskervville", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .cormorant-font {
+                font-family: "Cormorant", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .cormorant-g-font {
+                font-family: "Cormorant Garamond", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .estrada-font {
+                font-family: "Estrada";
+                font-weight: 400;
+            }
+
+            .garamond-font {
+                font-family: "EB Garamond", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .georgia-font {
+                font-family: "Georgia", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .georgia-italic-font {
+                font-family: "Georgiai", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .gilda-font {
+                font-family: "Gilda Display", serif;
+                font-weight: 400;
+                font-style: normal;
             }
 
             .jhodes-font {
                 font-family: "Jhodes";
                 font-weight: 400;
             }
-
+            
+            .libre-font {
+                font-family: "Libre Caslon Display", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+        
             .magis-font {
                 font-family: "Magis";
                 font-weight: 400;
+            }
+
+            .merriweather-font {
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: italic;
+                /*font-variation-settings: "wdth" 100;*/
             }
 
             .montage-font {
@@ -525,7 +678,198 @@ TABLE DES MATIÈRES
                 font-weight: 400;
             }
 
-        /*End of OTHER*/
+            .montserrat-font {
+                font-family: "Montserrat";
+            }
+
+            .raleway-font {
+                font-family: "Raleway";
+            }
+
+            .varela-font {
+                font-family: "Varela Round", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            /*Barlow Family Font*/
+
+            .barlow-condensed-thin {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            }
+
+            .barlow-condensed-extralight {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            }
+
+            .barlow-condensed-light {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            }
+
+            .barlow-condensed-regular {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .barlow-condensed-medium {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            }
+
+            .barlow-condensed-semibold {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            }
+
+            .barlow-condensed-bold {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+
+            .barlow-condensed-extrabold {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            }
+
+            .barlow-condensed-black {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            }
+
+            .barlow-condensed-thin-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+            }
+
+            .barlow-condensed-extralight-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 200;
+            font-style: italic;
+            }
+
+            .barlow-condensed-light-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            }
+
+            .barlow-condensed-regular-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            }
+
+            .barlow-condensed-medium-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            }
+
+            .barlow-condensed-semibold-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            }
+
+            .barlow-condensed-bold-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            }
+
+            .barlow-condensed-extrabold-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            }
+
+            .barlow-condensed-black-italic {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            }
+
+            /*End of Barlow*/
+
+            /* Crimson Text*/
+
+            .crimson-font {
+                font-family: "Crimson Text", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .crimson-font-semibold {
+                font-family: "Crimson Text", serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+
+            .crimson-font-bold {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            .crimson-font-italic {
+                font-family: "Crimson Text", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .crimson-font-semibold-italic {
+                font-family: "Crimson Text", serif;
+                font-weight: 600;
+                font-style: italic;
+            }
+
+            .crimson-font-bold-italic {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+
+            /*End of Crimson Text*/
+
+            /*Libre Caslon Text*/
+
+            .libre-caslon-text-regular {
+                font-family: "Libre Caslon Text", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .libre-caslon-text-bold {
+                font-family: "Libre Caslon Text", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            .libre-caslon-text-regular-italic {
+                font-family: "Libre Caslon Text", serif;
+                font-weight: 400;
+                font-style: italic;
+                line-height: 1.25rem;
+            }
+
+
+            /*End of Libre Caslon Text*/
+            
+
+        /*End of FONT FAMILIES*/
 
         /*II-C-3. OTHER*/
 
@@ -544,7 +888,23 @@ TABLE DES MATIÈRES
             .transparent {
                 color: transparent;
             }
+
+            /*Text Align*/
+
+            .text-align-center {
+                text-align: center;
+            }
+
+            .text-align-justify {
+                text-align: justify;
+            }
+
+            .text-align-right {
+                text-align: right;
+            }
             
+            /*Letter Spacing*/
+
             .letter-spacing {
                 letter-spacing: .5rem;
             }
@@ -561,13 +921,59 @@ TABLE DES MATIÈRES
                 line-height: 100%;
             }
 
+            /*Size and Weight*/
+
+            .point-fifty-rem {
+                font-size: .5rem;
+            }
+
+            .point-seventy-five-rem {
+                font-size: .75rem;
+            }
+
+            .point-eighty-five-rem {
+                font-size: .85rem;
+            }
+
             .one-point-one-rem {
                 font-size: 1.1rem;
+            }
+
+            .two-rem {
+                font-size: 2rem;
+            }
+
+            .two-point-five-rem {
+                font-size: 2.5rem;
+            }
+
+            .three-point-five-rem {
+                font-size: 3.5rem;
+            }
+
+            .four-point-five-rem {
+                font-size: 4.5rem;
+            }
+
+            .eight-point-five-rem {
+                font-size: 8.5rem;
+            }
+
+            .twelve-point-five-rem {
+                font-size: 12.5rem;
             }
 
             .weight-six-hundred {
                 font-weight: 600;
             }
+
+            /*Padding & Margins*/
+
+            .h2-margin-top {
+                margin-top: 5rem;
+            }
+
+            /*Other*/
 
             .hr-line {
                 border-top: 2px solid;
@@ -603,6 +1009,45 @@ TABLE DES MATIÈRES
             }
 
         /*End of FADE*/
+
+        /*ZOOM EFFECT*/
+
+            .zoom {
+                min-height: 100vh;
+                display: grid;
+                place-items: center;
+                padding: 48px 24px;
+                background: #0b0b0f; /* exemple */
+                color: #fff;
+                text-align: center;
+            }
+
+            /* Animation fade + zoom arrière (de 1.06 -> 1.00) */
+            .zoom-title {
+            opacity: 0;
+            transform: scale(1.10);
+            transform-origin: center;
+            animation: fadeZoomOut 3000ms ease-out forwards;
+            will-change: opacity, transform;
+            }
+
+            @keyframes fadeZoomOut {
+                to {
+                opacity: 1;
+                transform: scale(1);
+                }
+            }
+
+            /* Accessibilité: désactiver si l’utilisateur préfère moins d’animations */
+            @media (prefers-reduced-motion: reduce) {
+            .zoom-title {
+                animation: none;
+                opacity: 1;
+                transform: none;
+                }
+            }
+
+        /*End of ZOOM EFFECT*/
     
     /*End of SPECIAL EFFECTS*/
 
@@ -644,10 +1089,11 @@ TABLE DES MATIÈRES
 
         .nav-container {
             font-family: "Montserrat";
-            color: #cbcbcb;
+            color: #acb3ff;
             
             position: fixed;
             top: 50%;
+            right: 0%;
             transform: translate(0%, -50%);
 
             z-index: 10;
@@ -665,23 +1111,50 @@ TABLE DES MATIÈRES
             letter-spacing: .1rem;
             list-style-type: none;
 
+            width: fit-content;
+            margin-left: auto;
+
             padding: .75rem 0;
-            margin: 0;
+            margin-right: 0.5rem;
 
             transition: 1.5s ease-in-out;
         }
 
         nav li a {
-            color: #bbb;
+            color: #c2c7ff;
             text-decoration-line: none;
-            cursor: none;
+            /*cursor: none;*/
             transition: 2s;
         }
 
         nav li a:hover {
             color: #fff;
             text-decoration-line: none;
-            cursor: none;
+            /*cursor: none;*/
+        }
+        
+        /* animation au refresh */
+        .nav-slide-in {
+            opacity: 0;
+            transform: translateX(10rem);
+            animation: navIn 2500ms ease-out forwards;
+            will-change: transform, opacity;
+        }
+
+        @keyframes navIn{
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        }
+
+        /* Accessibilité */
+        @media (prefers-reduced-motion: reduce){
+        .nav-slide-in{
+            animation: none;
+            opacity: 1;
+            transform: none;
+        }
         }
 
     /* End of NAVIGATION */
@@ -751,6 +1224,7 @@ TABLE DES MATIÈRES
         }
 
         .main-title {
+            color: #FFFFFF;
             text-align: center;
             margin: auto;
             width: 100vw;
@@ -781,18 +1255,19 @@ TABLE DES MATIÈRES
             /*End of TITLE FOR SMALLER SCREENS*/
 
         .subtitle {
-            padding-top: 2rem;
+            /*padding-top: .5rem;*/
             font-family: 'Montserrat';
-            font-size: 1rem;
+            font-size: .7rem;
             font-weight: 400;
-            /*text-transform: uppercase;*/
+            letter-spacing: .35rem;
+            text-transform: uppercase;
         }
 
-        .subtitle .subtitle-fr {
+        /*.subtitle .subtitle-fr {
             display: none;
         }
         
-        /*.subtitle:hover .subtitle-eng {
+        .subtitle:hover .subtitle-eng {
             display: none;
         }
         
@@ -801,11 +1276,16 @@ TABLE DES MATIÈRES
         }*/
 
         .body-container {
-            background-color: #AAD9CD;
+            background-color: #FFFFFF/*#AAD9CD*/;
             margin: auto;
             display: flex;
             justify-content: center;
             flex-direction: column;
+
+            width: 60%;
+            margin-top: 0rem; /*15rem; 8.45rem*/
+            margin-bottom: 0%;
+            padding-bottom: 0rem;
         }
 
             /*BODY CONTAINER FOR SMALLER SCREENS*/
@@ -828,12 +1308,14 @@ TABLE DES MATIÈRES
 
         
             .content-container {
-                color: #FFF;
-                font-family: "Montserrat";
+                color: #02104d;
+                font-family: "georgiai";
                 font-weight: 400;
-                margin: auto;
-                height: 100vh;
-                text-align: center;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-bottom: 0%;
+                /*height: 100vh;*/
+                text-align: justify;
             }
     
                 /*CONTENT CONTAINER FOR SMALLER SCREENS*/
@@ -857,7 +1339,8 @@ TABLE DES MATIÈRES
             
             .model-container {
                 margin: auto;
-                transform: translate(0%, 40%);
+                margin-bottom: 5rem;
+                transform: translate(0%, 0%);
             }
     
                 /*MODEL CONTAINER FOR SMALLER SCREENS*/
@@ -1061,93 +1544,93 @@ TABLE DES MATIÈRES
 /*End of BODY CONTENT*/
 
 /*V. BUTTON*/
-
+    
     .button {
         text-align: center;
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: .75rem;
+        font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: .25rem;
+        letter-spacing: .15rem;
         
-        width: 100%;
-        height: 3.75rem;
-        border-radius: 10px;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        transition: 2.5s;
-    }
-
-        /* BUTTON FOR SMALLER SCREENS */
-
-        @media screen and (max-width: 480px) {
-
-            .button {
-                width: 100%;
-            }
-        }
-
-        /* End of BUTTON FOR SMALLER SCREENS */
-
-    .button-full {
-        color: #ff0000;
-        background-color: #000000;
-        border: none;
-    }
-
-    .button-full:hover {
-        /*background-color: rgba(220, 70, 118, 1); RASPBERRY*/
-        /*background-color: #006a7d; COOL BLUE COLOR*/
-        /*background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 150%);*/
-        color: #000000;
-        background-color: #FFFFFF;
-        border: 4px solid #000000;
-    }
-
-    .button-border {
-        color: #505050;
-        background-color: #AAD9CD;
-        border: 4px solid #000000;
-    }
-
-    .button-border:hover {
-        color:#000000;
-        background-color: #7db9a9;
-        border: 4px solid #000000;
-    }
-
-    .button2 {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: .25rem;
-        
-        width: 15rem;
-        height: 3.75rem;
+        width: 12rem;
+        height: 3rem;
         border-radius: 8px;
 
         margin: auto;
-        margin-top: 2rem;
+        margin-top: 4rem;
 
         transition: 2.5s;
     }
 
     .button-white-border {
-        color: #aaa;
-        border: 3px solid #aaa;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
         
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
     .button-white-border:hover {
         color: #FFF;
-        background-color: #303030;
-        border: 3px solid #FFFFFF;
+        background-color:rgba(255,255,255,0.25);
+        border: 1px solid #FFFFFF;
+    }
+
+    /* Ligne verticale centrée qui “pointe” vers le bas */
+    .button-with-line {
+    position: relative;
+    }
+
+    .button-with-line::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0px); /* espace sous le bouton */
+    transform: translateX(-50%);
+    width: 1px;
+    height: 10rem; /* longueur de la ligne */
+    background: rgba(255,255,255,0.9);
+    }
+
+    .btn-outline{
+        display: inline-block;
+        padding: 12px 22px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px; /* ajuste si tu veux plus carré */
+        background: transparent;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+
+        transition: background-color 180ms ease, transform 180ms ease, opacity 180ms ease;
+    }
+
+    /* Animation au chargement: monte depuis le bas + léger fade-in */
+    .button-rise{
+        opacity: 0;
+        transform: translateY(10rem);
+        animation: riseIn 2500ms ease-out forwards;
+        animation-delay: 1000ms;        /* petit délai pour arriver juste après le titre */
+        will-change: transform, opacity;
+    }
+
+        @keyframes riseIn {
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+    /* Accessibilité */
+    @media (prefers-reduced-motion: reduce) {
+    .button-rise {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
     }
 
 /*End of BUTTON*/

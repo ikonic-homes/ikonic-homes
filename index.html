@@ -11,11 +11,12 @@
 
     <title>Ikonic</title>
     <meta name="description" content="Ikonic est une plateforme immobilière moderne et ambitieuse, spécialisée dans la vente, la location et la gestion de biens immobiliers, qu'il s'agisse de programmes neufs ou de biens anciens. Basés à Dakar, nous accompagnons aussi bien la clientèle locale que la diaspora et les investisseurs étrangers souhaitant concrétiser leurs projets immobiliers au Sénégal.">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
     <script src="assets/cursor.js" async></script>
+    <script src="assets/fade.js" async></script>
     <!-- <script src="assets/popup.js" async></script> LET'S NOT HAVE THIS ONE -->
     <!-- <script src="assets/fade.js" async></script> MIGHT NOT BE NECESSARY -->
 
@@ -47,16 +48,24 @@
         <div class="main-title">
             <h1>
 
-                <div class="">
-                    <span class="jhodes-font">Ikonic</span><br/>
-                    <span class="magis-font uppercase">HOMES</span><br/>
-                </div>
-                
+                <section class="bgfade" id="fadetitle"> <!-- Fade still not working -->
+                    <div class="zoom-title">
+                        <span class="jhodes-font twelve-point-five-rem">Ikonic </span>
+                        <span class="barlow-condensed-light uppercase">HOMES</span><br/>
+                    
+                        <div class="subtitle">
+                        <span class="subtitle-eng">Appartements et Villas de Prestige</span>
+                        <!--span class="subtitle-fr">design de sites web statiques responsifs en html&comma; css &amp; js</span-->
+                        </div>                       
+                    </div>
+                    
+                    <div class="button button-white-border button-with-line button-rise" id="scrollto">
+                        <a href="#scrollto" class="white-link barlow-condensed-light">Nous Découvrir</a>
+                    </div>
+                    
+                </section>
 
-                <div class="subtitle">
-                    <span class="subtitle-eng">responsive website design in html&comma; css &amp; js</span>
-                    <!--span class="subtitle-fr">design de sites web statiques responsifs en html&comma; css &amp; js</span-->
-                </div>
+                
             </h1>
         </div>
 
@@ -68,62 +77,103 @@
     
         <article class="body-container">
 
-            <!-- NAVIGATION -->
+            <!-- NAVIGATION MENU -->
             
-                <!-- MEMO: On retire la navigation pour le moment
+                <!-- MEMO: TRAVAILLER SUR LE MENU POUR LES ÉCRANS TABLETTE ET TEL -->
                 
                 <nav class="nav-container">
 
-                    <ul>
-                        
-                        <li>&#8212 <a href="#the-pixel-architect"><span class="one-point-one-rem weight-six-hundred">the</span> <span class="pixel-font uppercase letter-spacing one-point-one-rem weight-six-hundred">pixel</span><span class="one-point-one-rem weight-six-hundred">architect</span></a></li>
+                    <ul class="nav-slide-in magis-font">
+                                                
+                        <li><a href="index.html"><span>Ikonic</span></a> &#8212</li>
 
-                        <li>&#8212 <a href="#the-tab"><span class="calling-font">The Tab</span></a></li>
+                        <li><a href="#scrollto"><span>notre mission</span></a> &#8212</li>
 
-                        <li>&#8212 <a href="#bold-stroke"><span class="binjay-font">Bold Stroke</span></a></li>
+                        <li><a href="#"><span>biens d'exception</span></a> &#8212</li>
 
-                        <li>&#8212 <a href="#"><span class="one-point-one-rem weight-six-hundred" href="#">no. 3</span></a></li>
+                        <li><a href="#"><span>nos services</span></a> &#8212</li>
 
-                        <li>&#8212 <a href="#"><span class="one-point-one-rem weight-six-hundred">no. 4</span></a></li>
-
-                        <li>&#8212 <a href="#contact"><span class="one-point-one-rem weight-six-hundred">contact</span></a></li>
+                        <li><a href="#contact"><span>contact</span></a> &#8212</li>
 
                     </ul>
 
                 </nav>
 
-                FIN du MEMO -->
-
-                <!--nav class="sidebar">
-
-                    <ul>
-                    
-                        <li class="sidebar-item"><a href="#contact"><span class="one-point-one-rem weight-six-hundred">about</span></a> &#8212</li>
-
-                        <li class="sidebar-item"><a href="#contact"><span class="one-point-one-rem weight-six-hundred">contact</span></a> &#8212</li>
-
-                    </ul>
-
-                </nav-->
-
-            <!-- End of NAVIGATION -->
+            <!-- End of NAVIGATION MENU -->
 
             <!-- CONTENT CONTAINER -->
 
-                <section id="the-tab" class="content-container">
+                <section class="content-container">
 
                     <div class="model-container">
 
-                        <img src="images/gallery/the-tab.jpg" alt="The Tab" class="screenshot">
+                        <div>
+                            <h2 class="barlow-condensed-light uppercase text-align-right h2-margin-top">Notre Mission</h2>
+                            <p class="georgia-italic-font point-eighty-five-rem">
+                                <span class="jhodes-font two-point-five-rem">Ikonic Homes</span> 
+                                est une agence immobilière basée à Dakar, spécialisée dans la vente, 
+                                la location et la gestion de biens d&apos;exception &mdash; résidences haut de gamme, 
+                                appartements de standing et opportunités rares &mdash; qu&apos;ils soient déjà livrés 
+                                ou en cours de développement. Nous accompagnons une clientèle exigeante, 
+                                au Sénégal comme à l&apos;international, avec une attention constante portée 
+                                à la qualité des actifs.</p>
 
-                        <div class="button2 button-white-border">Live Demo</diV>
+                            <p class="georgia-italic-font point-eighty-five-rem">Chaque projet appelle 
+                                une prise en charge personnalisée et engagée : sélection rigoureuse, 
+                                analyse approfondie, recommandations éclairées... Forte de plus de quinze ans 
+                                d&apos;expérience de terrain, notre équipe s&apos;appuie sur un réseau de partenaires 
+                                de premier plan, triés sur le volet, pour vous assurer une exécution fluide, 
+                                discrète et conforme aux meilleures pratiques.</p>
+                            
+                            <p class="georgia-italic-font point-eighty-five-rem">Au-delà de la transaction, 
+                                nous cultivons des relations fondées sur la confiance et la transparence, 
+                                afin de vous offrir un accompagnement à la hauteur de vos attentes : 
+                                sobre, rigoureux et résolument sur mesure.</p>
+
+                            <hr>
+                            
+                        </div>
+
+
+                        
+                        <div class="">
+                            <h2 class="barlow-condensed-light uppercase text-align-right h2-margin-top">Biens d'exception</h2>
+
+                            <p class="georgia-italic-font point-eighty-five-rem text-align-center">
+                                +221 77 ??? ????</br>
+                                contact.ikonic@gmail.com</br>
+                                Mermoz Comico &dash; Rue MZ-75
+                            </p>
+                            <hr>
+                        </div>
+
+                        <div class="">
+                            <h2 class="barlow-condensed-light uppercase text-align-right h2-margin-top">Services</h2>
+
+                            <p class="georgia-italic-font point-eighty-five-rem text-align-center">
+                                +221 77 ??? ????</br>
+                                contact.ikonic@gmail.com</br>
+                                Mermoz Comico &dash; Rue MZ-75
+                            </p>
+                            <hr>
+                        </div>
+
+                        <div class="">
+                            <h2 class="barlow-condensed-light uppercase text-align-right h2-margin-top">Contact</h2>
+
+                            <p class="georgia-italic-font point-eighty-five-rem text-align-right">
+                                +221 77 ??? ????</br>
+                                contact.ikonic@gmail.com</br>
+                                Mermoz Comico &dash; Rue MZ-75
+                            </p>
+                        </div>
 
                     </div>
 
                 </section>
 
 
-                <!-- CONTACT FORM -->
+                <!-- CONTACT FORM >
 
                 <section id="contact" class="content-container">
 
@@ -154,18 +204,18 @@
 
                 </section>
 
-                <!-- End of CONTACT FORM -->
+                <-- End of CONTACT FORM -->
                 
 
             <!-- End of CONTENT CONTAINER -->
 
             <!-- FOOTER -->
 
-                <footer class="footer-container">
+                <!--footer class="footer-container">
 
                     <div><span class="letter-spacing">the<span class="pixel-font letter-spacing">pixel</span>architect <i class="fa-regular fa-copyright"></i> 2023</span></div>
 
-                </footer>
+                </footer-->
 
             <!-- End of FOOTER -->
 
