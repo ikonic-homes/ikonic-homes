@@ -199,7 +199,8 @@ TABLE DES MATIÈRES
 
         html {
             
-            background: #000a37;
+            /*background: #000a37; BLUE*/
+            background-color: #e0e0e0;
 
             /* For Background Gradient
             background: linear-gradient(90deg, rgb(110, 255, 228) 0%, rgb(0, 245, 200) 100%);*/
@@ -215,7 +216,7 @@ TABLE DES MATIÈRES
 
             /* Background Image */           
 
-            background-image: url("../images/stock/Blueprint.jpg");
+            background-image: url("../images/stock/blueprint-white.jpg");
             width: 100%;
             height: 100vh;
             background-position: center center;
@@ -1089,7 +1090,9 @@ TABLE DES MATIÈRES
 
         .nav-container {
             font-family: "Montserrat";
-            color: #acb3ff;
+            /*color: #6d81b4; BLUE TINGE FOR BLUEPRINT*/
+            /*color: #553512; BROWN TINGE*/
+            color: #FFFFFF;
             
             position: fixed;
             top: 50%;
@@ -1121,7 +1124,10 @@ TABLE DES MATIÈRES
         }
 
         nav li a {
-            color: #c2c7ff;
+            /*color: #6d81b4; BLUE TINGE FOR BLUEPRINT*/
+            /*color: #553512; BROWN TINGE*/
+            /*color: #909090; GRAY*/
+            color: #FFFFFF;
             text-decoration-line: none;
             /*cursor: none;*/
             transition: 2s;
@@ -1258,7 +1264,7 @@ TABLE DES MATIÈRES
             /*padding-top: .5rem;*/
             font-family: 'Montserrat';
             font-size: .7rem;
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: .35rem;
             text-transform: uppercase;
         }
@@ -1547,8 +1553,8 @@ TABLE DES MATIÈRES
     
     .button {
         text-align: center;
-        font-size: .75rem;
-        font-weight: 300;
+        font-size: .8rem;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: .15rem;
         
@@ -1574,7 +1580,7 @@ TABLE DES MATIÈRES
 
     .button-white-border:hover {
         color: #FFF;
-        background-color:rgba(255,255,255,0.25);
+        background-color:rgba(255,255,255,0.4);
         border: 1px solid #FFFFFF;
     }
 
@@ -1930,6 +1936,3 @@ TABLE DES MATIÈRES
     }
 
     /*******************************************/
-
-
-
