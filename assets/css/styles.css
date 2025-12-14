@@ -216,7 +216,7 @@ TABLE DES MATIÈRES
 
             /* Background Image */           
 
-            background-image: url("../images/stock/blueprint-white.jpg");
+            background-image: url("../images/background/blueprint-white.jpg");
             width: 100%;
             height: 100vh;
             background-position: center center;
@@ -264,7 +264,7 @@ TABLE DES MATIÈRES
     /*II-A. FONT DISPLAY*/
 
         body, input, select, textarea {
-            font-family: "Montserrat", "Open Sans", "Raleway", "Varela Round";
+            font-family: "Magis";
             font-weight: 400;
             font-size: 1.25rem;
             line-height: 1;
@@ -292,6 +292,7 @@ TABLE DES MATIÈRES
                     font-size: 2rem;
                     font-weight: 400;
                     /*text-transform: uppercase;*/
+                    padding-bottom: 1rem;
                 }
 
                 .popup-box h2 {
@@ -365,8 +366,8 @@ TABLE DES MATIÈRES
 
             p {
                 line-height: 1.25rem;
-                padding-top: .5rem;
-                padding-bottom: .5rem;
+                padding-top: 0rem;
+                padding-bottom: 1rem;
             }
 
             b {
@@ -1053,10 +1054,101 @@ TABLE DES MATIÈRES
     /*End of SPECIAL EFFECTS*/
 
     /* II-D. IMAGES */
-
-        .screenshot {
-            width: 50%;
+        
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
         }
+
+        /* Chaque tuile est carrée et “masque” le zoom */
+        .tile {
+            position: relative;
+            display: block;
+            aspect-ratio: 1 / 1;     /* carré */
+            overflow: hidden;        /* empêche le zoom de dépasser */
+            border-radius: 0px;     /* arrondit les coins */
+            text-decoration: none;
+        }
+
+        /* L’image remplit la tuile */
+        .tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+
+            transform: scale(1);
+            filter: blur(4px); /* <- intensité du flou */
+
+            transition: transform 1000ms ease, filter 500ms ease;
+            will-change: transform, filter;
+        }
+
+        /* Filtre couleur (overlay) */
+        .tile .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(200, 200, 200, 0.45); /* change la couleur/opacity ici */
+            opacity: 1;
+            transition: opacity 350ms ease;
+            pointer-events: none;
+        }
+
+        /* Texte blanc centré */
+        .tile .label {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-family: "Barlow Condensed";
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            text-transform: uppercase; /* optionnel */
+            text-align: center;
+            padding: 12px;
+            pointer-events: none;
+        }
+
+        /* Hover: filtre disparaît + zoom léger */
+        .tile:hover img {
+            transform: scale(1.15);
+            filter: blur(0);
+        }
+
+        .tile:hover .overlay {
+            opacity: 0;
+        }
+
+        /* Accessibilité: focus clavier */
+        .tile:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 3px;
+        }
+
+        /* Responsive: en mobile, 1 colonne si tu veux */
+        @media (max-width: 640px) {
+        .photo-grid {
+            grid-template-columns: 1fr;
+        }
+        }
+
+        /* Desktop/tablette : 2 colonnes */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        /* Téléphone : 1 colonne */
+        @media (max-width: 640px) {
+        .photo-grid {
+            grid-template-columns: 1fr;
+        }
+        }
+
+
 
     /* End of IMAGES */
 
